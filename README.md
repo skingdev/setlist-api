@@ -12,6 +12,8 @@ This is based on the example that can be found on https://www.codementor.io/olat
 
 The API is located at https://desolate-caverns-63932.herokuapp.com
 
+You can use something like Postman in order to test the API using the following API calls:
+
 ### Get all songs
 GET to `/songs`
 

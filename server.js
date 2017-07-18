@@ -7,11 +7,10 @@ var express = require('express'),
 
 mongoose.Promise = global.Promise;
 
-
-
 var options = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
                 replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS : 30000 } } };
 
+// you would need to replace the username and password in order for this to work
 var mongodbUri = 'mongodb://<db username>:<db password>@ds153732.mlab.com:53732/setlist-api';
 
 mongoose.connect(mongodbUri, options);
